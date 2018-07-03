@@ -2,31 +2,31 @@ MAP_AREAS = (
     ('ranaka', 'ranaka'),
     ('digawana', 'digawana'),
     ('molapowabojang', 'molapowabojang'),
-    ('otse', 'otse')
+    ('otse', 'otse'),
     ('letlhakeng', 'letlhakeng'),
-    ('lentsweletau', 'lentsweletau')
+    ('lentsweletau', 'lentsweletau'),
     ('bokaa', 'bokaa'),
-    ('oodi', 'oodi')
+    ('oodi', 'oodi'),
     ('mmathethe', 'mmathethe'),
-    ('mmankgodi', 'mmankgodi')
+    ('mmankgodi', 'mmankgodi'),
     ('sefophe', 'sefophe'),
-    ('lerala', 'lerala')
+    ('lerala', 'lerala'),
     ('ramokgonami', 'ramokgonami'),
-    ('maunatlala', 'maunatlala')
+    ('maunatlala', 'maunatlala'),
     ('mmadinare', 'mmadinare'),
-    ('shoshosng', 'shoshosng')
+    ('shoshosng', 'shoshosng'),
     ('metsimotlhabe', 'metsimotlhabe'),
-    ('tati_siding', 'tati_siding')
+    ('tati_siding', 'tati_siding'),
     ('sebina', 'sebina'),
-    ('nkange', 'nkange')
+    ('nkange', 'nkange'),
     ('mmandunyane', 'mmandunyane'),
-    ('mathangwane', 'mathangwane')
+    ('mathangwane', 'mathangwane'),
     ('rakops', 'rakops'),
-    ('gweta', 'gweta')
+    ('gweta', 'gweta'),
     ('shakawe', 'shakawe'),
-    ('gumare', 'gumare')
+    ('gumare', 'gumare'),
     ('tsetsebjwe', 'tsetsebjwe'),
-    ('sefhare', 'sefhare')
+    ('sefhare', 'sefhare'),
     ('nata', 'nata'),
-    ('masunga', 'masunga')
+    ('masunga', 'masunga'),
 )
