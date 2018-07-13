@@ -41,19 +41,28 @@
 <div class="container">
 	<div class="raw">
 
+
   		<div id="div-home-right" class="col-md-12">
+
+  		<div class="panel panel-info">
+	    	<div class="panel-heading">Search by Subject Identifier</div>
+	      	<div class="panel-body">
+	      		<form id="subject_identifier" action="{% url 'correct_consent:home_url' %}" method="post">
+						{% csrf_token %}
+						{% crispy subject_identifier_form %}
+					</form>
+			 </div>
+	    </div>
   
-  		<div class="panel panel-default">
-    	<div class="panel-heading"><h2>Filter by community</h2></div>
-    		<table class="table table-hover responsive">
-    			<tr><td>
-      				<form id="map_area" action="{% url 'correct_consent:home_url' %}" method="post">
+  		<div class="panel panel-info">
+	    	<div class="panel-heading">Filter by community</div>
+	      	<div class="panel-body">
+	      		<form id="map_area" action="{% url 'correct_consent:home_url' %}" method="post">
 						{% csrf_token %}
 						{% crispy form %}
 					</form>
-      			</td></tr>
- 			</table>
-		</div>
+			 </div>
+	    </div>
 	
       	<div class="panel panel-default">
     	<div class="panel-heading"><h4> Subject Consents community: {{ map_area }}</h4></div>
