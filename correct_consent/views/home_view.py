@@ -1,19 +1,18 @@
-from django.views.generic.base import TemplateView
-from django.utils.decorators import method_decorator
 from django.contrib.auth.decorators import login_required
-from edc_base.view_mixins import EdcBaseViewMixin
+from django.utils.decorators import method_decorator
+from django.views.generic.base import TemplateView
 from django.views.generic.edit import FormView
+from edc_base.view_mixins import EdcBaseViewMixin
+from edc_consent.tests.models import SubjectConsent
 
-from bcpp_subject.models import SubjectConsent
 from ..forms import SubjectIdentifierForm
-from bcpp_subject_dashboard.model_wrappers import SubjectConsentModelWrapper
 
 
 class HomeView(EdcBaseViewMixin, TemplateView, FormView):
 
     form_class = SubjectIdentifierForm
     template_name = 'correct_consent/home.html'
-    consent_model_wrapper_cls = SubjectConsentModelWrapper
+    consent_model_wrapper_cls = None
 
     def consents(self, subject_identifier=None):
         """Return consents.

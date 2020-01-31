@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 import os
-from setuptools import setup
+
 from setuptools import find_packages
+from setuptools import setup
+
 
 with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
     README = readme.read()
@@ -22,6 +24,9 @@ setup(
     long_description=README,
     zip_safe=False,
     keywords='django edc correct consent',
+    install_requires=[
+        'django',
+        'django-crispy-forms']
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
