@@ -5,7 +5,7 @@ from django.views.generic.edit import FormView
 from edc_base.view_mixins import EdcBaseViewMixin
 from edc_consent.tests.models import SubjectConsent
 
-from ..forms import SubjectIdentifierForm
+from correct_consent.forms.forms import SubjectIdentifierForm
 
 
 class HomeView(EdcBaseViewMixin, TemplateView, FormView):
